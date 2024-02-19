@@ -1,0 +1,76 @@
+[
+  {
+    "iterationFor": "Setting Up Test Enviroment",
+    "iterationId": 0,
+    "iterationName": "Test SetUp",
+    "iterationDescription": "This iteration will setup teacher and principal whose credentials will be used to test other routes. These iteration will be copied every where whenever needed",
+    "routes": ["SignUp Principal", "SignUp Teacher"]
+  },
+  {
+    "iterationFor": "SuperAdmin",
+    "iterationId": 1,
+    "iterationName": "Super Admin Happy Path",
+    "iterationDescription": "This iteration will check the happy paths for super admin through which one can check the functionality of super admin",
+    "routes": [
+      "Login Super Admin",
+      "Get All Principal",
+      "Get Prinicipal By Id",
+      "Approve Principal",
+      "Update Principal",
+      "Logout Request",
+      "Login Principal",
+      "Apply For Leave",
+      "Logout Request",
+      "Login Super Admin",
+      "Get All Leaves",
+      "Approve Leave",
+      "Delete Principal",
+      "Logout Request",
+      "Tear Down Test Db"
+    ]
+  },
+  {
+    "iterationFor": "Principal",
+    "iterationInfo": {
+      "iterationId": 2,
+      "iterationName": "Teacher Happy Path",
+      "iterationDescription": "This iteration will check the happy paths for teacher through which one can check the functionality of teacher"
+    },
+    "routes": [
+      "SignUp Teacher",
+      "SignUp Principal",
+      "Login Super Admin",
+      "Get All Principal",
+      "Approve Principal",
+      "Logout Request",
+      "Login Principal",
+      "Get All Teachers",
+      "Get Single Teacher",
+      "Approve Teacher",
+      "Update Teacher",
+      "Create Event",
+      "Fetch All Events",
+      "Give Feedback For a Teacher",
+      "Fetch All Feedbacks",
+      "Apply For Leave",
+      "Get All Leaves",
+      "Get My Profile",
+      "Logout Request",
+      "Login Teacher",
+      "Raise Issue",
+      "Logout Request",
+      "Login Principal",
+      "Fetch Issues",
+      "Delete Teacher",
+      "Logout Request",
+      "Tear Down Test Db"
+    ]
+  },
+  {
+    "iterationFor": "Tearing Down Test Enviroment",
+    "iterationId": 0,
+    "iterationName": "Test TearDown",
+    "iterationDescription": "This iteration will delete everything from testDb",
+    "routes": ["Tear Down Test Db"]
+  }
+]
